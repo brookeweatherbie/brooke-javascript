@@ -492,7 +492,13 @@
 </table>
 
 <script>
-  new DataTable('#example');
+  $('#example thead th').eq(3).attr('width', '30%');
+ 
+ new DataTable('#example', {
+     paging: false,
+     scrollCollapse: true,
+     scrollY: '200px'
+ });
 </script>
   
 </body>
